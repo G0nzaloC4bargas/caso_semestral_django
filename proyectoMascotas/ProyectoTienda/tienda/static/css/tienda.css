@@ -1,0 +1,175 @@
+
+.cont_padre{
+    padding: 10px;
+    display:flex;
+    height: auto;/* para que no se vea el scroll */
+}
+.display{
+    width: 80%;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr ;
+}
+
+aside{
+    width: 20%;
+    flex-flow: column wrap;
+    grid-area: aside;
+    background: white;
+    border-radius: 9px;
+    border: 1px solid black;
+}
+
+aside h1{
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    width: 100%;
+    background: black;
+    color: white;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+aside a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-size: 5px;
+    background: black;
+    border: 1px solid black;
+}
+aside a:hover{
+    color:orange;
+    border: 1px solid black;
+}
+.btn_aside{
+    
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-size: 15px;
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.btn_aside:hover{
+    color:orange;
+    border: 1px solid orange;
+}
+
+aside li{
+    margin-bottom: 10px;
+}
+footer{
+    background: black;
+    display: none;
+}
+.contenedor{
+    background: white;
+    margin: auto;
+    margin-bottom: 10px ;
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+    display: block;
+
+}
+
+.contenedor:hover{
+    background: whitesmoke;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 2px solid gold;
+    transition: 0.2s;
+}
+
+.valor{ 
+    text-align: center;
+    margin-bottom: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.descripcion{
+    margin-bottom: 0px;
+    display: none;
+}
+
+.contenedor h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedor img{
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid BLACK;
+}
+
+.contenedor button{
+    display: flexbox;
+    justify-content: space-between;
+    margin-right: 8px;
+    text-align: center;
+    color: white;
+    margin-left:2px;
+    background: orange;
+    border-radius:10%;
+    border: 1px solid orange;
+}
+
+.contenedor button:hover{
+    
+    border: 1px white solid;
+    transition: .1s;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.opacity1 {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.user{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.username{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .display{
+        grid-template-columns:1fr 1fr 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .display{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    aside{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .display{
+        grid-template-columns: 1fr 1fr;
+    }
+    aside{
+        display:none;
+    }
+}
